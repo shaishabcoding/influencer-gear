@@ -45,6 +45,7 @@ nav {
 nav ul {
   display: flex;
   gap: 1.25rem;
+  padding-left: 0;
   list-style: none;
 }
 nav a {
@@ -104,6 +105,48 @@ nav a {
   flex-wrap: wrap;
 }
 /*    sponsors end */
+
+/*    collection start */
+.collection {
+  margin-top: 4rem;
+}
+.collection-title {
+  color: var(--primary-title-color);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.collection-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+.collection .card {
+  padding: 1rem;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-title {
+  color: #18191f;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.card img {
+  width: 100%;
+}
+.card .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.card .description {
+  width: 60%;
+}
+/*    collection end */
 /* main end */
 
 /* responsive design  start*/
@@ -137,11 +180,20 @@ nav a {
     gap: 1rem;
   }
   /* res banner end*/
+
   /* res sponsors start */
   .sponsors {
     border: none;
   }
   /* res sponsors end */
+
+  /* res collection start */
+  .collection-card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1rem;
+  }
+  /* res collection end */
 }
 /*    mobile end */
 /* responsive design  end*/
