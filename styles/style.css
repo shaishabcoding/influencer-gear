@@ -1,0 +1,44 @@
+/* default styles */
+:root {
+  --primary-title-color: #3a3a3a;
+  --primary-description-color: #787885;
+  --primary-btn-color: #e02c6d;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: Poppins;
+}
+header,
+main {
+  padding: 5rem;
+}
+/* nav style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-title,
+nav ul {
+  margin: 0;
+}
+.nav-title,
+nav a {
+  color: var(--primary-title-color);
+}
+.nav-title{
+    font-weight: 700;
+}
