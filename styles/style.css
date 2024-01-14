@@ -1,4 +1,4 @@
-/* default styles */
+/* default styles start */
 :root {
   --primary-title-color: #3a3a3a;
   --primary-description-color: #787885;
@@ -16,7 +16,27 @@ header,
 main {
   padding: 5rem;
 }
-/* nav style */
+header {
+  padding-bottom: 0;
+}
+button,
+a {
+  cursor: pointer;
+}
+/* default styles end*/
+
+/* shared styles start*/
+.btn-primary {
+  background: var(--primary-btn-color);
+  border: 0;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+/* shared styles end*/
+
+/* header start */
+/*    nav start */
 nav {
   display: flex;
   justify-content: space-between;
@@ -39,6 +59,25 @@ nav ul {
 nav a {
   color: var(--primary-title-color);
 }
-.nav-title{
-    font-weight: 700;
+.nav-title {
+  font-weight: 700;
 }
+/*    nav end */
+/* header end */
+
+/* main start */
+/*    banner start */
+.banner {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+.banner-img-container {
+  background: url("../images/Circle design.svg") no-repeat;
+  background-size: contain;
+}
+.banner-img-container img {
+  width: 100%;
+}
+/*    banner end */
+/* main end */
