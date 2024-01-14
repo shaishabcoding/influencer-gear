@@ -71,6 +71,7 @@ nav a {
   display: flex;
   gap: 7rem;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .banner-img-container {
   background: url("../images/Circle design.svg") no-repeat;
@@ -80,11 +81,44 @@ nav a {
   width: 100%;
 }
 /*    banner end */
+
+/*    sponsors start */
+.sponsors {
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  border-image: linear-gradient(
+      90deg,
+      #00000000 0%,
+      #c0ccda05 10%,
+      #c0ccda 50%,
+      #c0ccda05 90%,
+      #00000000 100%
+    )
+    30;
+  border-width: 1px;
+  border-style: solid;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/*    sponsors end */
 /* main end */
 
 /* responsive design  start*/
 /*    mobile start */
 @media screen and (max-width: 576px) {
+  /* res default styles start */
+  header,
+  main {
+    padding: 1rem;
+  }
+  header {
+    margin-top: 2rem;
+  }
+  /* res default styles end */
+
   /* res nav start */
   nav,
   nav ul {
@@ -98,9 +132,16 @@ nav a {
 
   /* res banner start*/
   .banner {
+    padding-top: 3rem;
     flex-direction: column-reverse;
+    gap: 1rem;
   }
   /* res banner end*/
+  /* res sponsors start */
+  .sponsors {
+    border: none;
+  }
+  /* res sponsors end */
 }
 /*    mobile end */
 /* responsive design  end*/
